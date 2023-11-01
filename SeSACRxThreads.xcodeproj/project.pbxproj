@@ -520,7 +520,7 @@
 				DEVELOPMENT_TEAM = 3UNP2C529F;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeSACRxThreads/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "새싹-RxSwift-16주차";
+				INFOPLIST_KEY_CFBundleDisplayName = "태권-RxSwift-새싹-16주차";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -553,7 +553,7 @@
 				DEVELOPMENT_TEAM = 3UNP2C529F;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeSACRxThreads/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "새싹-RxSwift-16주차";
+				INFOPLIST_KEY_CFBundleDisplayName = "태권-RxSwift-새싹-16주차";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;

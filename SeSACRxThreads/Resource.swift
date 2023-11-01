@@ -8,6 +8,6 @@
 import UIKit
 
 enum Color {
-    static let black: UIColor = .textPoint
-    static let white: UIColor = .viewPoint
+    static let black: UIColor = .black
+    static let white: UIColor = .white
 }
