@@ -106,6 +106,18 @@ final class BirthdayViewController: UIViewController {
             .map { "\($0)일"}
             .bind(to: dayLabel.rx.text)
             .disposed(by: viewModel.disposeBag)
+        
+        viewModel.buttonEnabled
+            .bind(to: nextButton.rx.isEnabled)
+            .disposed(by: viewModel.disposeBag)
+        
+        viewModel.buttonColor
+            .bind(to: nextButton.rx.backgroundColor)
+            .disposed(by: viewModel.disposeBag)
+        
+        viewModel.buttonColor
+            .bind(to: infoLabel.rx.textColor)
+            .disposed(by: viewModel.disposeBag)
     }
     
     @objc private func nextButtonClicked() {

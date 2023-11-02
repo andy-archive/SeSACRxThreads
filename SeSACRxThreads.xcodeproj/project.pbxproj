@@ -29,6 +29,7 @@
 		041280732AEFAD4B00972552 /* NicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041280722AEFAD4B00972552 /* NicknameViewController.swift */; };
 		041280782AF1D14000972552 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041280772AF1D14000972552 /* Resource.swift */; };
 		3806C15F2AF3C80700C1F5DC /* BirthdayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3806C15E2AF3C80700C1F5DC /* BirthdayViewModel.swift */; };
+		3806C1612AF3D25600C1F5DC /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3806C1602AF3D25600C1F5DC /* Date+.swift */; };
 		38DD8A7B2AF3ACF300C71CDC /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD8A7A2AF3ACF300C71CDC /* String+.swift */; };
 		38DD8A822AF3B3A700C71CDC /* PhoneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD8A812AF3B3A700C71CDC /* PhoneViewModel.swift */; };
 		38DD8A842AF3B46C00C71CDC /* Constants+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD8A832AF3B46C00C71CDC /* Constants+UIKit.swift */; };
@@ -76,6 +77,7 @@
 		041280722AEFAD4B00972552 /* NicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameViewController.swift; sourceTree = "<group>"; };
 		041280772AF1D14000972552 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		3806C15E2AF3C80700C1F5DC /* BirthdayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayViewModel.swift; sourceTree = "<group>"; };
+		3806C1602AF3D25600C1F5DC /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		38DD8A7A2AF3ACF300C71CDC /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		38DD8A812AF3B3A700C71CDC /* PhoneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViewModel.swift; sourceTree = "<group>"; };
 		38DD8A832AF3B46C00C71CDC /* Constants+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+UIKit.swift"; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				38DD8A7A2AF3ACF300C71CDC /* String+.swift */,
+				3806C1602AF3D25600C1F5DC /* Date+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				041280732AEFAD4B00972552 /* NicknameViewController.swift in Sources */,
 				0412806A2AEFA91E00972552 /* SignUpViewController.swift in Sources */,
 				041280712AEFAD3D00972552 /* PhoneViewController.swift in Sources */,
+				3806C1612AF3D25600C1F5DC /* Date+.swift in Sources */,
 				041280262AEF9BAB00972552 /* SceneDelegate.swift in Sources */,
 				38DD8A822AF3B3A700C71CDC /* PhoneViewModel.swift in Sources */,
 				38DD8A7B2AF3ACF300C71CDC /* String+.swift in Sources */,
