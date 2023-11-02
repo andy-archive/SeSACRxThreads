@@ -16,11 +16,7 @@ final class PhoneViewController: UIViewController {
     private let phoneTextField = SignTextField(placeholderText: "연락처를 입력해주세요")
     private let nextButton = PointButton(title: "다음")
     
-    private let buttonEnabled = BehaviorSubject(value: false)
-    private let buttonColor = BehaviorSubject(value: UIColor.systemRed)
-    private let phoneNumber = BehaviorSubject(value: "010")
-    
-    private let disposeBag = DisposeBag()
+    private let viewModel = PhoneViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,38 +31,29 @@ final class PhoneViewController: UIViewController {
     }
     
     private func bind() {
-        buttonEnabled
+        viewModel.buttonEnabled
             .bind(to: nextButton.rx.isEnabled)
-            .disposed(by: disposeBag)
+            .disposed(by: viewModel.disposeBag)
         
-        buttonColor
+        viewModel.buttonColor
             .bind(to: nextButton.rx.backgroundColor, phoneTextField.rx.tintColor)
-            .disposed(by: disposeBag)
+            .disposed(by: viewModel.disposeBag)
         
-        buttonColor
+        viewModel.buttonColor
             .map { $0.cgColor }
             .bind(to: phoneTextField.layer.rx.borderColor)
-            .disposed(by: disposeBag)
+            .disposed(by: viewModel.disposeBag)
         
-        phoneNumber
+        viewModel.phoneNumber
             .bind(to: phoneTextField.rx.text)
-            .disposed(by: disposeBag)
-        
-        phoneNumber
-            .map { $0.count > 12 }
-            .subscribe(with: self, onNext: { owner, value in
-                let color = value ? UIColor.systemGreen : UIColor.systemRed
-                owner.buttonColor.onNext(color)
-                owner.buttonEnabled.onNext(value)
-            })
-            .disposed(by: disposeBag)
+            .disposed(by: viewModel.disposeBag)
         
         phoneTextField.rx.text.orEmpty
             .subscribe { value in
                 let formatted = value.formated(by: "###-####-####")
-                self.phoneNumber.onNext(formatted)
+                self.viewModel.phoneNumber.onNext(formatted)
             }
-            .disposed(by: disposeBag)
+            .disposed(by: viewModel.disposeBag)
     }
     
     @objc private func nextButtonClicked() {

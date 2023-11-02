@@ -29,6 +29,9 @@
 		041280732AEFAD4B00972552 /* NicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041280722AEFAD4B00972552 /* NicknameViewController.swift */; };
 		041280782AF1D14000972552 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041280772AF1D14000972552 /* Resource.swift */; };
 		38DD8A7B2AF3ACF300C71CDC /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD8A7A2AF3ACF300C71CDC /* String+.swift */; };
+		38DD8A822AF3B3A700C71CDC /* PhoneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD8A812AF3B3A700C71CDC /* PhoneViewModel.swift */; };
+		38DD8A842AF3B46C00C71CDC /* Constants+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD8A832AF3B46C00C71CDC /* Constants+UIKit.swift */; };
+		38DD8A872AF3B48B00C71CDC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD8A862AF3B48B00C71CDC /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,9 @@
 		041280722AEFAD4B00972552 /* NicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameViewController.swift; sourceTree = "<group>"; };
 		041280772AF1D14000972552 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		38DD8A7A2AF3ACF300C71CDC /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		38DD8A812AF3B3A700C71CDC /* PhoneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViewModel.swift; sourceTree = "<group>"; };
+		38DD8A832AF3B46C00C71CDC /* Constants+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+UIKit.swift"; sourceTree = "<group>"; };
+		38DD8A862AF3B48B00C71CDC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +131,7 @@
 		041280222AEF9BAB00972552 /* SeSACRxThreads */ = {
 			isa = PBXGroup;
 			children = (
+				38DD8A852AF3B48000C71CDC /* Constants */,
 				38DD8A792AF3ACE600C71CDC /* Extensions */,
 				041280532AEF9C1F00972552 /* SignUp */,
 				041280542AEF9C2600972552 /* SignIn */,
@@ -189,8 +196,9 @@
 			isa = PBXGroup;
 			children = (
 				0412806E2AEFAD2D00972552 /* BirthdayViewController.swift */,
-				041280702AEFAD3D00972552 /* PhoneViewController.swift */,
 				041280722AEFAD4B00972552 /* NicknameViewController.swift */,
+				041280702AEFAD3D00972552 /* PhoneViewController.swift */,
+				38DD8A812AF3B3A700C71CDC /* PhoneViewModel.swift */,
 			);
 			path = SignUpOptional;
 			sourceTree = "<group>";
@@ -201,6 +209,15 @@
 				38DD8A7A2AF3ACF300C71CDC /* String+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		38DD8A852AF3B48000C71CDC /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				38DD8A862AF3B48B00C71CDC /* Constants.swift */,
+				38DD8A832AF3B46C00C71CDC /* Constants+UIKit.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				041280782AF1D14000972552 /* Resource.swift in Sources */,
+				38DD8A872AF3B48B00C71CDC /* Constants.swift in Sources */,
 				0412806F2AEFAD2D00972552 /* BirthdayViewController.swift in Sources */,
 				041280652AEFA2F000972552 /* SignTextField.swift in Sources */,
 				0412806C2AEFABFE00972552 /* PasswordViewController.swift in Sources */,
@@ -354,7 +372,9 @@
 				0412806A2AEFA91E00972552 /* SignUpViewController.swift in Sources */,
 				041280712AEFAD3D00972552 /* PhoneViewController.swift in Sources */,
 				041280262AEF9BAB00972552 /* SceneDelegate.swift in Sources */,
+				38DD8A822AF3B3A700C71CDC /* PhoneViewModel.swift in Sources */,
 				38DD8A7B2AF3ACF300C71CDC /* String+.swift in Sources */,
+				38DD8A842AF3B46C00C71CDC /* Constants+UIKit.swift in Sources */,
 				041280582AEFA05300972552 /* SignInViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
