@@ -68,12 +68,7 @@ final class BirthdayViewController: UIViewController {
     
     private let nextButton = PointButton(title: "가입하기")
     
-    private let birthday: BehaviorSubject<Date> = BehaviorSubject(value: .now)
-    private let year = BehaviorSubject(value: 2020)
-    private let month = BehaviorSubject(value: 10)
-    private let day = BehaviorSubject(value: 30)
-    
-    private let disposeBag = DisposeBag()
+    private let viewModel = BirthdayViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,43 +84,28 @@ final class BirthdayViewController: UIViewController {
     
     private func bind() {
         birthDayPicker.rx.date
-            .bind(to: birthday)
-            .disposed(by: disposeBag)
+            .bind(to: viewModel.birthday)
+            .disposed(by: viewModel.disposeBag)
         
-        birthday
-            .subscribe(with: self) { owner, date in
-                let component = Calendar.current.dateComponents([.year, .month, .day], from: date)
-                
-                guard let year = component.year,
-                      let month = component.month,
-                      let day = component.day
-                else { return }
-                
-                owner.year.onNext(year)
-                owner.month.onNext(month)
-                owner.day.onNext(day)
-            }
-            .disposed(by: disposeBag)
-        
-        year
+        viewModel.year
             .map { "\($0)년" }
             .observe(on: MainScheduler.instance)
             .subscribe(with: self) { owner, value in
                 owner.yearLabel.text = value
             }
-            .disposed(by: disposeBag)
+            .disposed(by: viewModel.disposeBag)
         
-        month
+        viewModel.month
             .observe(on: MainScheduler.instance)
             .subscribe(with: self) { owner, value in
                 owner.monthLabel.text = "\(value)월"
             }
-            .disposed(by: disposeBag)
+            .disposed(by: viewModel.disposeBag)
         
-        day
+        viewModel.day
             .map { "\($0)일"}
             .bind(to: dayLabel.rx.text)
-            .disposed(by: disposeBag)
+            .disposed(by: viewModel.disposeBag)
     }
     
     @objc private func nextButtonClicked() {
