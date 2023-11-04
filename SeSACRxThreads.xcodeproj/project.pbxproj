@@ -34,6 +34,8 @@
 		38DD8A822AF3B3A700C71CDC /* PhoneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD8A812AF3B3A700C71CDC /* PhoneViewModel.swift */; };
 		38DD8A842AF3B46C00C71CDC /* Constants+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD8A832AF3B46C00C71CDC /* Constants+UIKit.swift */; };
 		38DD8A872AF3B48B00C71CDC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD8A862AF3B48B00C71CDC /* Constants.swift */; };
+		38F098BF2AF635DA0071B006 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 38F098BE2AF635DA0071B006 /* .gitignore */; };
+		38F098C12AF636170071B006 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 38F098C02AF636170071B006 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		38DD8A812AF3B3A700C71CDC /* PhoneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViewModel.swift; sourceTree = "<group>"; };
 		38DD8A832AF3B46C00C71CDC /* Constants+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+UIKit.swift"; sourceTree = "<group>"; };
 		38DD8A862AF3B48B00C71CDC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		38F098BE2AF635DA0071B006 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		38F098C02AF636170071B006 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 		041280172AEF9BAB00972552 = {
 			isa = PBXGroup;
 			children = (
+				38F098C02AF636170071B006 /* README.md */,
+				38F098BE2AF635DA0071B006 /* .gitignore */,
 				041280222AEF9BAB00972552 /* SeSACRxThreads */,
 				041280392AEF9BAC00972552 /* SeSACRxThreadsTests */,
 				041280432AEF9BAC00972552 /* SeSACRxThreadsUITests */,
@@ -340,6 +346,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				041280302AEF9BAC00972552 /* LaunchScreen.storyboard in Resources */,
+				38F098BF2AF635DA0071B006 /* .gitignore in Resources */,
+				38F098C12AF636170071B006 /* README.md in Resources */,
 				0412802D2AEF9BAC00972552 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
